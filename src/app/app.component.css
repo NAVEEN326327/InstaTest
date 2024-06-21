@@ -1,0 +1,238 @@
+.top-header {
+  height: 80px;
+  display: flex;
+  place-items: center;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin-top: -8px;
+  background: #fff;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.navbar-brand img {
+  width: 160px;
+  height: 22.5px;
+}
+
+img, svg {
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+.container.top-navigation .top-header-buttons {
+  text-align: right;
+  margin-top: 6px;
+}
+
+.container.top-navigation .top-header-buttons a {
+  border: 1px solid #606366;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #606366;
+  font-size: 15px;
+  vertical-align: middle;
+  margin: 0 4px;
+  transition: all linear 0.2s;
+}
+
+.container.top-navigation .top-header-buttons span.active {
+  background-color: #fd7e14;
+  border-color: #fd7e14;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.custom-page .container.top-navigation .top-header-buttons span {
+  border: 1px solid #606366;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #606366;
+  font-size: 15px;
+  vertical-align: middle;
+  margin: 0 4px;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+.btn-getApp {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav#mainNav {
+  background: #ffcc33;
+  height: 48px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav > .nav-item > a {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.navbar-nav > .nav-item > a :last-child {
+  margin-right: 0 !important;
+}
+
+.body {
+  position: absolute;
+  top: 128px;
+  height: 374px;
+  background-image: linear-gradient(120deg, #3498eb 0%, #1c61b0 100%);
+  width: 100%;
+  text-align-last: center;
+}
+
+.banner {
+  display: -webkit-inline-box;
+  padding-top: 100px;
+}
+
+.banner > section {
+  padding: 0 50px 0 50px;
+  text-align-last: start;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.banner-msg > span {
+  margin-bottom: 24px;
+}
+
+.middle-text {
+  font-size: xx-large;
+}
+
+.banner-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  margin-top: 98px;
+}
+.buttons > a {
+  text-decoration: unset;
+  background: white;
+  padding: 24px;
+  border-radius: 48px;
+  border: 2px #fd7e14  solid;
+  margin: 0 12px;
+}
+
+.navbar-toggle {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+  .btn-getApp {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-none {
+    display: none;
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 90%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+  }
+  .navbar {
+    display: none !important;
+  }
+  .body {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: inline-block !important;
+  }
+}
